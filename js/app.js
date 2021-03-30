@@ -85,7 +85,7 @@ export default class Sketch {
       const intersects = this.raycaster.intersectObjects( this.scene.children );
 
       if(intersects.length > 0){
-          console.log('mousemovement: ', intersects[0]);
+          // console.log('mousemovement: ', intersects[0]);
           let obj = intersects[0].object;
           obj.material.uniforms.hover.value = intersects[0].uv;
       }
@@ -135,7 +135,7 @@ export default class Sketch {
       let material = this.material.clone();      
 
       img.addEventListener('mouseenter', () => {
-        console.log('enter')
+        // console.log('enter')
         gsap.to(material.uniforms.hoverState, {
           duration: 1,
           value: 1
@@ -143,7 +143,7 @@ export default class Sketch {
       })
 
       img.addEventListener('mouseout', () => {
-        console.log('out')
+        // console.log('out')
         gsap.to(material.uniforms.hoverState, {
           duration: 1,
           value: 0
@@ -165,7 +165,7 @@ export default class Sketch {
         height: bounds.height
       }
     })
-    console.log('imageStore: ', this.imageStore)
+    // console.log('imageStore: ', this.imageStore)
   }
 
 
