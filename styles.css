@@ -1,0 +1,28 @@
+* {
+    margin:0;
+    padding:0
+} 
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+div.img-text {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    text-align: center;    
+}
+
+img {
+    text-align: center;   
+    opacity: 0; 
+    width: 40em;
+    height: auto;
+    margin: 0.1em;
+}
